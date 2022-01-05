@@ -7,6 +7,12 @@
     <title>Hello World no Git</title>
 </head>
 <body>
-    <h1>Marcelo Júnior</h1>
+    <h1>Letícia Araújo</h1>
+    <?php
+    require_once "model/Conexao.php";
+    $tecnologias = Conexao::select("tecnologia", "id, nome");
+
+    print_r($tecnologias);
+    ?>
 </body>
 </html>
